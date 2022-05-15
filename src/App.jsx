@@ -140,11 +140,13 @@ function App() {
 			</div>
 
 			<div
-				className="my-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-t-2xl rounded-br-xl rounded-bl-3xl  shadow-xl shadow-teal-500 opacity-50"
+				className="my-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-teal-500 border-4 border-blue-600 overflow-hidden"
 				style={{
 					backgroundImage: `url(./src/assets/1.jpg)`,
 				}}
-			></div>
+			>
+				<div className="h-full w-full bg-cyan-300 mix-blend-multiply"></div>
+			</div>
 		</div>
 	);
 }
