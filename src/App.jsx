@@ -1,26 +1,37 @@
 function App() {
 	return (
 		<div>
-			<h1 className="text-4xl text-center">Belajar Tailwind</h1>
+			<h1 className="text-8xl font-bold text-center my-10">
+				Mari Belajas Tailwind CSS
+			</h1>
 
-			<section className="mb-10">
-				<h2>Spacing</h2>
-				<div className="ml-8 ">Margin</div>
-				<div className="py-9">Padding</div>
+			<section className="mb-10 bg-indigo-200">
+				<h2 className="text-3xl text-center">Spacing</h2>
+				<div className="ml-8 bg-red-200">Margin</div>
+				<div className="py-9 bg-red-200">Padding</div>
 			</section>
 
-			<section className="mb-10">
-				<h2>Sizing</h2>
-				<div className="w-32 h-32 mx-auto text-center ">Kotak 1</div>
-				<div className="max-w-xs max-h-md">Kotak 2</div>
+			<section className="mb-10 bg-green-200">
+				<h2 className="text-3xl text-center">Sizing</h2>
+				<div className="w-32 h-32 mx-auto text-center bg-yellow-200">
+					Kotak 1
+				</div>
+				<div className="max-w-xs max-h-md bg-yellow-200">Kotak 2</div>
 			</section>
 
 			<section className="mb-96 font-inter font-normal max-w-3xl mx-auto">
 				<h2 className="mb-4 text-4xl font-bold">
 					Belajar Mengenai Typography pada TailwindCSS
 				</h2>
-				<div className="mb-4 text-lg">
-					By Azie Melza Pratama, 8 Maret 2022
+				<div className="mb-4 text-lg text-gray-500">
+					By{" "}
+					<a
+						href=""
+						className="text-gray-700 font-semibold underline"
+					>
+						Azie Melza Pratama
+					</a>
+					, 8 Maret 2022
 				</div>
 				<p className="mb-4 text-2xl">
 					Lorem ipsum dolor, sit amet{" "}
