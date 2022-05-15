@@ -147,6 +147,29 @@ function App() {
 			>
 				<div className="h-full w-full bg-cyan-300 mix-blend-multiply"></div>
 			</div>
+
+			<div
+				className="my-32 max-w-xl mx-auto h-96 bg-red-500 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-teal-500 border-4 border-blue-600 overflow-hidden bg-blend-darken"
+				style={{
+					backgroundImage: `url(./src/assets/1.jpg)`,
+				}}
+			></div>
+
+			<div
+				className="my-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-teal-500 border-4 border-blue-600 overflow-hidden blur-sm brightness-150"
+				style={{
+					backgroundImage: `url(./src/assets/1.jpg)`,
+				}}
+			></div>
+
+			<div
+				className="my-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-slate-500 overflow-hidden border-8 flex"
+				style={{
+					backgroundImage: `url(./src/assets/1.jpg)`,
+				}}
+			>
+				<div className="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-lg rounded-full"></div>
+			</div>
 		</div>
 	);
 }
