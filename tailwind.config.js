@@ -8,6 +8,10 @@ module.exports = {
 			fontFamily: {
 				inter: ["Inter", "sans-serif"],
 			},
+			colors: {
+				wpu: "#bada55",
+				kopi: "#c0ffee",
+			},
 		},
 	},
 	plugins: [],
