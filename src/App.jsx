@@ -22,7 +22,7 @@ function App() {
 				<div className="max-w-xs max-h-md bg-wpu">Kotak 2</div>
 			</section>
 
-			<section className="mb-96 font-inter font-normal max-w-3xl mx-auto">
+			<section className="mb-10 font-inter font-normal max-w-3xl mx-auto">
 				<h2 className="mb-4 text-4xl font-bold">
 					Belajar Mengenai Typography pada TailwindCSS
 				</h2>
@@ -64,6 +64,13 @@ function App() {
 					consequatur velit.{" "}
 				</p>
 			</section>
+
+			<div
+				className="max-w-xl h-96 bg-slate-500 mx-auto mt-[42px] mb-14"
+				style={{
+					backgroundImage: `url(https://source.unsplash.com/1000x600?frontend)`,
+				}}
+			></div>
 		</div>
 	);
 }
