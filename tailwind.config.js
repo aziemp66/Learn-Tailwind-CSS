@@ -5,6 +5,9 @@ module.exports = {
 			spacing: {
 				13: "3.5rem",
 			},
+			fontFamily: {
+				inter: ["Inter", "sans-serif"],
+			},
 		},
 	},
 	plugins: [],
