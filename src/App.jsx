@@ -140,7 +140,7 @@ function App() {
 			</div>
 
 			<div
-				className="my-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center"
+				className="my-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-t-2xl rounded-br-xl rounded-bl-3xl  shadow-xl shadow-teal-500 opacity-50"
 				style={{
 					backgroundImage: `url(./src/assets/1.jpg)`,
 				}}
