@@ -170,6 +170,15 @@ function App() {
 			>
 				<div className="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-lg rounded-full"></div>
 			</div>
+
+			<hr className="my-20" />
+
+			<div className="flex justify-center">
+				<button className="my-10 bg-sky-500 px-6 py-2 rounded-lg text-white font-semibold font-inter hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300">
+					Submit
+				</button>
+			</div>
+			<div className="mb-56"></div>
 		</div>
 	);
 }
