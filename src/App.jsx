@@ -181,12 +181,28 @@ function App() {
 				<h5 className="font-bold text-slate-700 text-lg mb-3 group-hover:text-white">
 					My Card
 				</h5>
-				<p className="text-slate-600 group-hover:text-white">
+				<p className="font-serif text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900 first-line:uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 ">
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 					Deleniti numquam, cumque et aliquid ipsa natus assumenda
 					dolorum aut? Commodi dolore fugit assumenda. Omnis rerum
 					recusandae expedita doloremque officia asperiores sunt.
 				</p>
+			</div>
+
+			<div className="max-w-lg border text-gray-600 border-gray-300 rounded-xl mx-auto font-inter p-5 shadow-md hover:shadow-xl">
+				<form action="">
+					<label htmlFor="email">
+						<span className="block font-semibold font-inter p-5 shadow-md">
+							Email
+						</span>
+						<input
+							id="email"
+							type="email"
+							placeholder="Masukkan Email"
+							className="px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500"
+						/>
+					</label>
+				</form>
 			</div>
 
 			<div className="mb-56"></div>
