@@ -177,7 +177,7 @@ function App() {
 				Submit
 			</button>
 
-			<div className="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group">
+			<div className="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group cursor-pointer">
 				<h5 className="font-bold text-slate-700 text-lg mb-3 group-hover:text-white">
 					My Card
 				</h5>
@@ -192,15 +192,18 @@ function App() {
 			<div className="max-w-lg border text-gray-600 border-gray-300 rounded-xl mx-auto font-inter p-5 shadow-md hover:shadow-xl">
 				<form action="">
 					<label htmlFor="email">
-						<span className="block font-semibold font-inter p-5 shadow-md">
+						<span className="block font-semibold font-inter mb-1 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-1">
 							Email
 						</span>
 						<input
 							id="email"
 							type="email"
 							placeholder="Masukkan Email"
-							className="px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500"
+							className="peer px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-red-600 invalid:focus:ring-red-700 invalid:focus:border-red-700 peer"
 						/>
+						<p className="text-sm m-1 text-red-700 mt-2 invisible peer-invalid:visible">
+							Email Tidak Valid
+						</p>
 					</label>
 				</form>
 			</div>
