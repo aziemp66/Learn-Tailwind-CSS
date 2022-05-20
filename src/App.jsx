@@ -2,6 +2,12 @@ import { useState } from "react";
 
 function App() {
 	const [darkMode, setDarkMode] = useState(null);
+
+	const toggleDarkMode = (e) => {
+		e.preventDefault();
+		setDarkMode((prev) => !prev);
+	};
+
 	return (
 		<root className={`${darkMode && "dark"}`}>
 			<div className="dark:bg-slate-800 dark:text-slate-200">
@@ -184,11 +190,11 @@ function App() {
 					Submit
 				</button>
 
-				<div className="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group cursor-pointer">
-					<h5 className="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:text-white">
+				<div className="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group cursor-pointer dark:hover:bg-slate-300">
+					<h5 className="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:text-white dark:group-hover:text-slate-700">
 						My Card
 					</h5>
-					<p className="font-serif text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900 first-line:uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:text-white">
+					<p className="font-serif text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900 first-line:uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:text-white dark:group-hover:text-slate-800">
 						Lorem ipsum, dolor sit amet consectetur adipisicing
 						elit. Deleniti numquam, cumque et aliquid ipsa natus
 						assumenda dolorum aut? Commodi dolore fugit assumenda.
@@ -207,7 +213,7 @@ function App() {
 								id="email"
 								type="email"
 								placeholder="Masukkan Email"
-								className="peer px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-red-600 invalid:focus:ring-red-700 invalid:focus:border-red-700 peer"
+								className="peer px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-red-600 invalid:focus:ring-red-700 invalid:focus:border-red-700 peer dark:focus:ring-slate-800 dark:focus:border-slate-800 dark:text-slate-200 dark:placeholder-slate-300"
 							/>
 							<p className="text-sm m-1 text-red-700 mt-2 invisible peer-invalid:visible">
 								Email Tidak Valid
@@ -217,14 +223,30 @@ function App() {
 				</div>
 
 				<button
-					onClick={(e) => {
-						e.preventDefault();
-						setDarkMode((prev) => !prev);
-					}}
+					onClick={toggleDarkMode}
 					className="bg-sky-500 text-white hover:bg-sky-600 block mx-auto my-10 px-5 py-2 rounded-2xl dark:bg-slate-200 dark:text-slate-800 font-inter font-semibold dark:hover:text-slate-200 dark:hover:bg-slate-800 dark:outline dark:outline-slate-200"
 				>
 					Dark Mode
 				</button>
+
+				<div className="flex justify-center">
+					<span className="text-md text-sky-500 mr-2 font-bold dark:text-slate-200">
+						Light
+					</span>
+					<input type="checkbox" id="toggle" className="hidden" />
+					<label onClick={toggleDarkMode} htmlFor="toggle">
+						<div className="w-14 h-6 bg-sky-500 rounded-full flex items-center p-1 cursor-pointer dark:bg-slate-500">
+							<div
+								className={`w-4 h-4 bg-white rounded-full transition duration-300 ${
+									darkMode && "translate-x-8"
+								}`}
+							></div>
+						</div>
+					</label>
+					<span className="text-md text-slate-600 ml-2 font-bold dark:text-slate-400">
+						Dark
+					</span>
+				</div>
 
 				<div className="pb-96 dark:bg-slate-800"></div>
 			</div>
