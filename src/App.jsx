@@ -4,7 +4,7 @@ function App() {
 	return (
 		<div>
 			<h1 className="text-8xl font-bold text-center my-10">
-				Mari Belajas{" "}
+				Mari Belajar{" "}
 				<span className="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
 					Tailwind CSS
 				</span>
@@ -173,11 +173,22 @@ function App() {
 
 			<hr className="my-20" />
 
-			<div className="flex justify-center">
-				<button className="my-10 bg-sky-500 px-6 py-2 rounded-lg text-white font-semibold font-inter hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300">
-					Submit
-				</button>
+			<button className="my-10 bg-sky-500 px-6 py-2 rounded-lg text-white font-semibold font-inter hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 block mx-auto">
+				Submit
+			</button>
+
+			<div className="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group">
+				<h5 className="font-bold text-slate-700 text-lg mb-3 group-hover:text-white">
+					My Card
+				</h5>
+				<p className="text-slate-600 group-hover:text-white">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Deleniti numquam, cumque et aliquid ipsa natus assumenda
+					dolorum aut? Commodi dolore fugit assumenda. Omnis rerum
+					recusandae expedita doloremque officia asperiores sunt.
+				</p>
 			</div>
+
 			<div className="mb-56"></div>
 		</div>
 	);
