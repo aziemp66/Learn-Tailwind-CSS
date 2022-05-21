@@ -248,6 +248,18 @@ function App() {
 					</span>
 				</div>
 
+				<hr className="my-40" />
+
+				<div className="flex flex-col gap-40">
+					<div className="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-150 hover:rotate-45 transition duration-500 hover:translate-x-16 hover:bg-pink-500"></div>
+
+					<div className="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-150 hover:rotate-45 transition duration-500 hover:bg-pink-500 origin-top-left"></div>
+
+					<div className="w-40 h-40 bg-pink-500 mx-auto mt-20 group rounded-lg">
+						<div className="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-500 ease-in-out delay-150"></div>
+					</div>
+				</div>
+
 				<div className="pb-96 dark:bg-slate-800"></div>
 			</div>
 		</root>
