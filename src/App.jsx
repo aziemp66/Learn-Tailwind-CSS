@@ -9,7 +9,7 @@ function App() {
 	};
 
 	return (
-		<root className={`${darkMode && "dark"}`}>
+		<div className={`${darkMode && "dark"} scroll-smooth`}>
 			<div className="dark:bg-slate-800 dark:text-slate-200">
 				<h1 className="text-8xl font-bold text-center my-10">
 					Mari Belajar{" "}
@@ -224,9 +224,9 @@ function App() {
 
 				<button
 					onClick={toggleDarkMode}
-					className="bg-sky-500 text-white hover:bg-sky-600 block mx-auto my-10 px-5 py-2 rounded-2xl dark:bg-slate-200 dark:text-slate-800 font-inter font-semibold dark:hover:text-slate-200 dark:hover:bg-slate-800 dark:outline dark:outline-slate-200"
+					className="bg-sky-500 text-white hover:bg-sky-600 block mx-auto my-10 px-5 py-2 rounded-2xl dark:bg-slate-200 dark:text-slate-800 font-inter font-semibold dark:hover:text-slate-200 dark:hover:bg-slate-800 dark:outline dark:outline-slate-200 transition duration-500 ease-in-out"
 				>
-					Dark Mode
+					{darkMode ? "Light Mode" : "Dark Mode"}
 				</button>
 
 				<div className="flex justify-center">
@@ -272,9 +272,120 @@ function App() {
 					<div className="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg animate-wiggle "></div>
 				</div>
 
+				<hr className="my-40 border-t-4" />
+
+				<div className="container my-20 mx-auto px-10">
+					<div className="border rounded-lg shadow-lg p-10 relative">
+						<div className="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 -right-5 cursor-pointer">
+							<span className="text-2xl m-auto">❌</span>
+						</div>
+						<img
+							src="./src/Assets/1.jpg"
+							alt="gambar"
+							className="float-left mr-4"
+							width={150}
+						/>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Quas obcaecati soluta voluptas, numquam ipsam,
+							aut facere animi nemo eius laborum culpa autem
+							veniam necessitatibus! Molestiae provident adipisci
+							quidem sit, ad, natus officia laudantium totam quae,
+							quos magni nobis eligendi excepturi cupiditate a
+							debitis non beatae itaque recusandae. Officiis, quis
+							rem.
+						</p>
+					</div>
+				</div>
+
+				<div className="container mx-auto px-10">
+					<div className="border rounded-lg shadow-lg p-10 relative">
+						<div className="w-10 h-10 bg-blue-200 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2 cursor-pointer">
+							<span className="text-xl m-auto">⬆</span>
+						</div>
+						<img
+							src="./src/Assets/1.jpg"
+							alt="gambar"
+							className="float-left mr-4"
+							width={150}
+						/>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Quas obcaecati soluta voluptas, numquam ipsam,
+							aut facere animi nemo eius laborum culpa autem
+							veniam necessitatibus! Molestiae provident adipisci
+							quidem sit, ad, natus officia laudantium totam quae,
+							quos magni nobis eligendi excepturi cupiditate a
+							debitis non beatae itaque recusandae. Officiis, quis
+							rem.
+						</p>
+					</div>
+				</div>
+
+				<div className="container mx-auto cursor-pointer">
+					<div className="bg-sky-300 border p-4 rounded-full fixed bottom-4 right-4">
+						<a href="#" className="text-2xl">
+							⏫
+						</a>
+					</div>
+				</div>
+
+				<div className="container my-20 mx-auto">
+					<div className="border rounded-lg shadow-lg p-10 relative">
+						<img
+							src="./src/Assets/1.jpg"
+							alt="gambar"
+							className="float-left mr-4"
+							width={150}
+						/>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Quas obcaecati soluta voluptas, numquam ipsam,
+							aut facere animi nemo eius laborum culpa autem
+							veniam necessitatibus! Molestiae provident adipisci
+							quidem sit, ad, natus officia laudantium totam quae,
+							quos magni nobis eligendi excepturi cupiditate a
+							debitis non beatae itaque recusandae. Officiis, quis
+							rem.
+						</p>
+					</div>
+				</div>
+				<div className="container mx-auto border rounded-lg shadow-lg p-10 columns-3">
+					<img
+						src="https://source.unsplash.com/600x400"
+						alt=""
+						className="mb-4"
+					/>
+					<img
+						src="https://source.unsplash.com/600x400"
+						alt=""
+						className="mb-4"
+					/>
+					<img
+						src="https://source.unsplash.com/600x400"
+						alt=""
+						className="mb-4"
+					/>
+					<img
+						src="https://source.unsplash.com/600x400"
+						alt=""
+						className="mb-4"
+					/>
+					<img
+						src="https://source.unsplash.com/600x400"
+						alt=""
+						className="mb-4"
+					/>
+					<img
+						src="https://source.unsplash.com/600x400"
+						alt=""
+						className="mb-4"
+					/>
+				</div>
+
 				<div className="pb-96 dark:bg-slate-800"></div>
 			</div>
-		</root>
+		</div>
 	);
 }
 
