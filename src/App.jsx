@@ -383,6 +383,36 @@ function App() {
 					/>
 				</div>
 
+				<hr className="my-24 border-t-4" />
+
+				<div className="container px-6 font-inter">
+					<h3 className="text-4xl font-bold text-slate-800">
+						Azie{" "}
+						<span className="bg-gradient-to-br from-sky-600 to-sky-400 bg-clip-text text-transparent">
+							Melza
+						</span>{" "}
+						Pratama
+					</h3>
+					<img
+						src="https://source.unsplash.com/1280x960"
+						alt="gambarRandom"
+						className="mt-4 rounded-xl shadow-xl"
+					/>
+					<h2 className="mt-6 text-2xl font-semibold text-slate-700">
+						Mari Belajar Programming Bersama Azie
+					</h2>
+					<p className="mt-2 text-slate-600">
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Ab hic amet accusamus dolorum non iusto sunt in
+						minima eaque, enim ipsum quia, ex itaque accusantium
+						optio et ipsa! Itaque, ut nobis officiis beatae officia
+						reiciendis inventore corrupti temporibus. Optio, quia?
+					</p>
+					<div className="mt-4 inline-block px-5 py-3 bg-red-600 rounded-lg shadow-lg uppercase text-white font-semibold cursor-pointer tracking-wider text-sm">
+						<a href="#">Subscribe Youtube Channel</a>
+					</div>
+				</div>
+
 				<div className="pb-96 dark:bg-slate-800"></div>
 			</div>
 		</div>
