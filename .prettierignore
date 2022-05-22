@@ -1,0 +1,5 @@
+# Ignore Artifacts
+build
+coverage
+
+./src/index.css
