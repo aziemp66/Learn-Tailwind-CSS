@@ -385,8 +385,8 @@ function App() {
 
 				<hr className="my-24 border-t-4" />
 
-				<div className="container px-6 font-inter">
-					<h3 className="text-4xl font-bold text-slate-800">
+				<div className="container px-6 font-inter mx-auto max-w-md sm:max-w-xl md:max-w-5xl">
+					<h3 className="text-4xl font-bold text-slate-800 sm:text-5xl md:text-6xl">
 						Azie{" "}
 						<span className="bg-gradient-to-br from-sky-600 to-sky-400 bg-clip-text text-transparent">
 							Melza
@@ -396,20 +396,24 @@ function App() {
 					<img
 						src="https://source.unsplash.com/1280x960"
 						alt="gambarRandom"
-						className="mt-4 rounded-xl shadow-xl"
+						className="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center md:h-80 md:w-full"
 					/>
-					<h2 className="mt-6 text-2xl font-semibold text-slate-700">
+					<h2 className="mt-6 text-2xl font-semibold text-slate-700 sm:mt-8 sm:text-4xl">
 						Mari Belajar Programming Bersama Azie
 					</h2>
-					<p className="mt-2 text-slate-600">
+					<p className="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
 						Lorem ipsum dolor, sit amet consectetur adipisicing
 						elit. Ab hic amet accusamus dolorum non iusto sunt in
 						minima eaque, enim ipsum quia, ex itaque accusantium
-						optio et ipsa! Itaque, ut nobis officiis beatae officia
-						reiciendis inventore corrupti temporibus. Optio, quia?
+						optio et ipsa! Itaque
 					</p>
-					<div className="mt-4 inline-block px-5 py-3 bg-red-600 rounded-lg shadow-lg uppercase text-white font-semibold cursor-pointer tracking-wider text-sm">
-						<a href="#">Subscribe Youtube Channel</a>
+					<div className="mt-4 sm:mt-6 ">
+						<a
+							href="#"
+							className="sm:text-base inline-block px-5 py-3 bg-red-600 rounded-lg shadow-lg uppercase text-white font-semibold cursor-pointer tracking-wider text-sm"
+						>
+							Subscribe Youtube Channel
+						</a>
 					</div>
 				</div>
 
