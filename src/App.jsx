@@ -539,7 +539,7 @@ function App() {
         </div>
 
         <div className="mt-64 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 ">
-          <h2 className="text-xl h-15 font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex">
+          <h2 className="text-xl h-15 font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex md:justify-center">
             <span className="self-center">Welcome to Azie Programming</span>
           </h2>
           <div className="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 flex justify-center">
