@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "pretty": "npx prettier --write ."
+    "pretty": "npx prettier --write .",
+    "start": "npm run pretty && npm run dev"
   },
   "dependencies": {
     "react": "^18.0.0",

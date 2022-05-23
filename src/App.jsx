@@ -9,8 +9,8 @@ function App() {
   };
 
   return (
-    <div className={`${darkMode && "dark"} scroll-smooth`}>
-      <div className="dark:bg-slate-800 dark:text-slate-200">
+    <div className={`${darkMode && "dark"}`}>
+      <div className="dark:bg-slate-800 dark:text-slate-200 transition duration-500 ease-in-out">
         <h1 className="text-8xl font-bold text-center my-10">
           Mari Belajar{" "}
           <span className="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
@@ -300,9 +300,28 @@ function App() {
         </div>
 
         <div className="container mx-auto cursor-pointer">
-          <div className="bg-sky-300 border p-4 rounded-full fixed bottom-4 right-4">
+          <div
+            className={`${
+              darkMode ? "bg-slate-700" : "bg-sky-300"
+            } border p-4 rounded-full fixed bottom-4 right-4`}
+          >
             <a href="#" className="text-2xl">
               ⏫
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="container mx-auto cursor-pointer"
+          onClick={toggleDarkMode}
+        >
+          <div
+            className={`${
+              darkMode ? "bg-slate-700" : "bg-sky-300"
+            } border p-4 rounded-full fixed bottom-4 left-4 transition duration-500 ease-in-out transform hover:scale-110`}
+          >
+            <a href="#" className="text-2xl">
+              {darkMode ? "☀️" : "🌙"}
             </a>
           </div>
         </div>
@@ -517,6 +536,36 @@ function App() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-64 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4 ">
+          <h2 className="text-xl h-15 font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex">
+            <span className="self-center">Welcome to Azie Programming</span>
+          </h2>
+          <div className="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 flex justify-center">
+            <span className="self-end">@melza.moment</span>
+          </div>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => {
+            return (
+              <div
+                className={`h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 ease-in-out ${
+                  item === 2 && "md:col-start-3"
+                } ${item === 6 && "md:col-start-2"} ${
+                  item === 7 && "md:col-start-4"
+                } ${item === 9 && "md:col-start-3"} ${
+                  item === 10 && "md:col-start-3"
+                }`}
+                key={item}
+              >
+                <div
+                  className={`w-full h-full bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-1 transition-all duration-500 ease-in-out`}
+                  style={{
+                    backgroundImage: `url(./src/assets/grid/${item}.jpg)`,
+                  }}
+                ></div>
+              </div>
+            );
+          })}
         </div>
 
         <div className="pb-96 dark:bg-slate-800"></div>
